@@ -130,6 +130,19 @@ Redirection to external domain
 
 # 📄 Sample Report Output
 
+```bash
+Web Vulnerability Scan Report
+
+Target: https://example.com
+
+Generated at: 2025-11-16 22:49:49
+
+Total Findings: 0
+
+No vulnerabilities detected with current payload set.
+
+Note: This is a basic academic scanner. Results may include false positives or miss complex vulnerabilities. Always validate manually.
+```
 Target URL
 
 Timestamp
