@@ -65,7 +65,7 @@ web-vuln-scanner/
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/web-vuln-scanner.git
+git clone https://github.com/Akhil123890/web-vuln-scanner.git
 cd web-vuln-scanner
 ```
 
