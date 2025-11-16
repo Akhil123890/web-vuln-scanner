@@ -43,13 +43,41 @@ HTML reporting module
 
 > **Important:** This tool is for learning and testing on **your own applications** or systems where you have **explicit permission**. Do not use it on unauthorized targets.
 
+# 📁 Project Structure
+
+```bash
+web-vuln-scanner/
+│── scanner.py            # Main entry point
+│── crawler.py            # Crawler module
+│── requirements.txt
+│── README.md
+│
+├── vulns/                # Vulnerability modules
+│   ├── sqli.py
+│   ├── xss.py
+│   └── redirect.py
+│
+└── report/
+    └── report_gen.py     # HTML report generator
+```
 ## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/web-vuln-scanner.git
+cd web-vuln-scanner
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Usage
+
+Run the scanner with:
 
 ```bash
 python scanner.py --url https://example.com --depth 1 --report report.html
