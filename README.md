@@ -1,40 +1,53 @@
-🔥 Web Application Vulnerability Scanner (Mini Burp Suite)
+# Web Application Vulnerability Scanner (Mini Burp Suite)
 
-A lightweight, Python-based web application vulnerability scanner built for cybersecurity learning.
-This tool automatically crawls a target website, identifies parameters, injects attack payloads, and detects common vulnerabilities including:
+This is a simple educational **web application vulnerability scanner** written in Python.
 
-SQL Injection
+It can:
+- Crawl a target website (same-domain links)
+- Identify URLs and forms with parameters
+- Test for:
+  - SQL Injection
+  - Cross-Site Scripting (XSS)
+  - Open Redirect
+- Generate an HTML report
 
-Cross-Site Scripting (XSS)
+> **Important:** This tool is for learning and testing on **your own applications** or systems where you have **explicit permission**. Do not use it on unauthorized targets.
 
-Open Redirect
+## Installation
 
-It also generates a professional, clean HTML security report.
+```bash
+pip install -r requirements.txt
+```
 
-🚀 Features
+## Usage
 
-🔍 Automatic Web Crawler (extracts links, forms, parameters)
+```bash
+python scanner.py --url https://example.com --depth 1 --report report.html
+```
 
-🧪 SQL Injection Detection
+- `--url`   : Target website to scan
+- `--depth` : Crawl depth (default: 1)
+- `--report`: Output HTML report file name
 
-🧪 XSS (Cross-Site Scripting) Detection
+## Requirements
 
-🔁 Open Redirect Detection
+- Python 3.x
+- `requests`
+- `beautifulsoup4`
 
-📄 HTML Report Generation
+Install using:
 
-🛠 Modular Architecture (easy to extend with new vulns)
+```bash
+pip install requests beautifulsoup4
+```
 
-🖥️ Tech Stack
+Or:
 
-Python 3.x
+```bash
+pip install -r requirements.txt
+```
 
-requests
+## Disclaimer
 
-beautifulsoup4
-
-urllib.parse
-
-HTML reporting module
-
-🔧 Beginner-friendly Python code
+This project is for **educational purposes only**.
+Use it responsibly and legally.
